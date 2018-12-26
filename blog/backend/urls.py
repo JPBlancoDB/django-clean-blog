@@ -1,8 +1,8 @@
 from django.urls import path
 
-from . import api
+from .controllers import AuthorsController
 
 urlpatterns = [
-    path('authors', api.get),
-    path('authors/<int:id>', api.get_by_id),
+    path('authors', AuthorsController.get),
+    path('authors/<int:id>', AuthorsController.get_by_id),
 ]
