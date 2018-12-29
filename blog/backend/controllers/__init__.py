@@ -1,1 +1,2 @@
 from .authors_controller import AuthorsController
+from .posts_controller import PostsController
