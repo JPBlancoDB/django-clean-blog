@@ -1,4 +1,7 @@
 [![Build Status](https://travis-ci.org/JPBlancoDB/django-clean-blog.svg?branch=master)](https://travis-ci.org/JPBlancoDB/django-clean-blog)
+
+[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=JPBlancoDB_django-clean-blog&metric=alert_status)](https://sonarcloud.io/api/project_badges/measure?project=JPBlancoDB_django-clean-blog&metric=alert_status)
+(https://sonarcloud.io/api/project_badges/measure?project=JPBlancoDB_django-clean-blog&metric=alert_status)
 # Clean Blog Template with Django
 You can find the original Clean Blog template here: 
 [startbootstrap-clean-blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog)
