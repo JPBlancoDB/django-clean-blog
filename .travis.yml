@@ -1,7 +1,15 @@
 language: python
 python:
-  - "3.6"
+- '3.6'
 install:
-  - pip install -r requirements.txt
+- pip install -r requirements.txt
 script:
-  - python manage.py test
+- python manage.py test
+addons:
+  sonarcloud:
+    organization: "jpblancodb-github"
+    token:
+      secure: cleEsopiv5tknozOPWibl4e6Nh7GQ0SmPwRVvW6m16XXPqE+lGa9E3alA1Fxr/0E4/cUkfWJomRjhOn6ztcVO3XTpS8c9VNoaUHHY8nwq0t1iMMUc1jB/K2ksQw7So4CS4GV8qMj5b01DG2EslnMx/M9gKNt/AQIQwQcTkrW0QxZ3DmvjCdeElD5O1OvOvvwjJErGudaKbNjhu0ad+xNHqSBSmjiIv5EiirVAzSGu4tGxAMHfna1Bv+qUUFU/na3gK7X7FBJTEg78qnSt+6wZG35SAJQZhteu8jsI+D+8ZWL0FuCEACiv6/SdaPerTaORLWQKCDkMAysg8GmQQnLRJuqnxA3LvEDMBvB86ve5thm7i1MNLiCPHP1uwyfjqU68b3P2Ntpajk4m/HZPZ6MKYQRuo0BS3q1gpetqRbmBIaJME0fcfYBQhoOn5sfMgQRb0RlH6Xn0AuSKhXJP8LMwfnZdut2k74TIV0HQWZPCQN40dq7Tu3e28K+kHGQ7cvTibcHP9RosuWTGI3LQ9qHXDcwi0zPQTiuwLcq5Oye4k80Lj3ta67Vjk4qMXNVRA6dWSZA29H2rLrsbvTi9+Q9Is/P0K3Nu8GgHnIIdpb8Fei0+RKtM8X4nL3yM7KqCBffDxPMDqyuCuHt0nAbVk639kRvhf5c0eMaivqz9Q0+h08=
+script:
+  - sonar-scanner
+
